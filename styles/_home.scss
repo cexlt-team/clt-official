@@ -1,23 +1,43 @@
-.section{
-  text-align: center;
-  font-size: 4em;
-  color: #222;
+.home {
+  background-image: url('/assets/images/home-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    img {
+      max-width: 450px;
+    }
+
+    .sub-text {
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
+    .main-text {
+      font-size: 2.5rem;
+    }
+  }
 }
 
-.actions{
-  list-style-type: none;
-}
-.actions button{
-  padding: .93em 1.87em;
-  background: #35495e;
-  border-radius: 5px;
-  border: 0;
-  color: #fff;
-  margin: 7px;
-  font-size: 15px;
-  cursor: pointer;
-}
-.actions button:hover{
-  background: #fff;
-  color: #35495e;
+@media (min-width: 280px) and (max-width: 480px) {
+  .home {
+    .content {
+      padding: 25px;
+
+      img {
+        max-width: 250px;
+        margin-bottom: 24px;
+      }
+
+      .sub-text {
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-bottom: 12px;
+      }
+  
+      .main-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
 }

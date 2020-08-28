@@ -1,0 +1,30 @@
+.dapp {
+  background-image: url('/assets/images/sub-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    img {
+      max-width: 450px;
+    }
+  }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .dapp {
+    .content {
+      padding: 25px;
+
+      img {
+        max-width: 250px;
+        margin-bottom: 24px;
+      }
+
+      div {
+        span {
+          font-size: 1rem !important;
+        }
+      }
+    }
+  }
+}

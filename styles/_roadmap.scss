@@ -1,0 +1,83 @@
+.roadmap {
+  background-image: url('/assets/images/sub-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 24px;
+    }
+
+    .start-year {
+      margin: 120px 0 12px;
+      text-align: left;
+      font-size: 1.3rem;
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+
+      .roadmap-item {
+        width: calc(100% / 6);
+        border-top: 3px solid #fff;
+        text-align: left;
+        padding: 8px;
+
+        &.dashed {
+          border-top: 3px dashed #fff;
+
+          .desc {
+            color: rgba(255,255,255,.58);
+          }
+        }
+
+        .month {
+          text-transform: uppercase;
+          font-size: 1.2rem;
+        }
+
+        .desc {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .roadmap {
+    .content {
+      .section-title {
+        display: none;
+      }
+
+      .start-year {
+        margin: 0 12px 12px;
+        text-align: left;
+        font-size: 1rem;
+      }
+
+      .wrap {
+        flex-wrap: wrap;
+
+        .roadmap-item {
+          width: 40%;
+
+          .month {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+          }
+  
+          .desc {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

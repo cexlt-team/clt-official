@@ -1,7 +1,22 @@
+import Countdown from 'react-count-down'
+
 const DappSection = () => {
+  const expired = () => {
+    console.log('expired callback')
+  }
+
+  const options = {
+    endDate: '09/11/2020 00:00 AM',
+    prefix: 'until to open Staking Dapp',
+    expired
+  }
+
   return (
     <div className="dapp section">
-      <h1>Dapp</h1>
+      <div className="content">
+        <img src="/assets/images/clt-icon.png" alt="CLT" />
+        <Countdown options={options} />
+      </div>
     </div>
   )
 }

@@ -1,0 +1,54 @@
+.contact {
+  background-image: url('/assets/images/sub-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 48px;
+    }
+
+    .contact-email {
+      margin-bottom: 24px;
+
+      p {
+        &:first-child {
+          color: rgba(255,255,255,.58);
+        }
+      }
+    }
+
+    .community-link {
+      margin-top: 150px;
+
+      a {
+        margin-right: 45px;
+        color: rgba(255,255,255,.58);
+        transition: all .3s ease;
+        
+        svg {
+          width: 25px;
+        }
+
+        &:hover {
+          color: #fff;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .contact {
+    .content {
+      .section-title {
+        display: none;
+      }
+    }
+  }
+}

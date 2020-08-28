@@ -1,7 +1,12 @@
 const DisclaimerSection = () => {
   return (
     <div className="disclaimer section">
-      <h1>Disclaimer</h1>
+      <div className="content container">
+        <div className="section-title">Disclaimer</div>
+        <div className="context">
+          Cryptocurrencies are a high risk investment and may not be suitable for all members of the public and all types of investor. Before purchasing cryptocurrency, you must ensure that the nature, complexity and risks inherent in the trading of cryptocurrency are suitable for your objectives in light of your circumstances and financial position. You should not purchase cryptocurrency unless you understand the extent of your exposure to potential loss. Cryptocurrency exchange rates have exhibited strong volatility to date and you understand that the extent of exposure to potential loss could extend to your entire cryptocurrency investment. Many factors outside of the control of Cexlt.io will effect the market price of cryptocurrencies, including, but not limited to, national and international economic, financial, regulatory, political, terrorist, military, and other events, adverse or positive news events and publicity, and generally extreme, uncertain, and volatile market conditions. Extreme changes in price may occur at any time, resulting in a potential loss of value of your entire investment in cryptocurrencies, complete or partial loss of purchasing power, and difficulty or a complete inability to sell or exchange your digital currency. CLT team is not responsible for any losses incurred as a result of trading our token. Information provided in this correspondence is intended solely for informational purposes and is obtained from sources believed to be reliable. Information is in no way guaranteed. No guarantee of any kind is implied or possible where projections of future conditions are attempted. None of the content published on this site constitutes a recommendation that any particular cryptocurrency, transaction or investment strategy is suitable for any specific person. None of the information providers or their affiliates will advise you personally concerning the nature, potential, value or suitability of any particular cryptocurrency, portfolio of cryptocurrencies, transaction, investment strategy or other matter. The products and services presented on this website may only be purchased in jurisdictions in which their marketing and distribution are authorized. CLT team advises all interested parties to check in advance whether they are legally entitled to purchase the products and/or services presented on this website.
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 
 import HomeSection from '../components/HomeSection'
@@ -9,41 +9,58 @@ import ContactSection from '../components/ContactSection'
 import DisclaimerSection from '../components/DisclaimerSection'
 import DappSection from '../components/DappSection'
 
+const anchors = ['Home', 'About', 'Distribution', 'Roadmap', 'Contact', 'Disclaimer', 'Dapp'];
+
 const Home = props => {
-  const moveSectionDown = () => {
-    fullpage_api.moveSectionDown()
+  const onLeave = (origin, destination, direction) => {
+    const orig = `${origin.anchor}-menu`
+    const dest = `${destination.anchor}-menu`
+
+    document.getElementById(orig).classList.toggle('active')
+    document.getElementById(dest).classList.toggle('active')
   }
 
   const Menu = () => {
     return (
-      <div
-        className="menu"
-        style={{
-          position: "fixed",
-          top: 0,
-          zIndex: 100
-        }}
-      >
-        <ul className="actions">
-          <li>
-            <button onClick={moveSectionDown}>
-              Move Section Down
-            </button>
+      <ul id="mainMenu" className="menu">
+        {anchors.map((value, index) => (
+          <li id={`${value}-menu`} className="menu-item" key={index}>
+            <a 
+              href={`#${value}`}
+              onClick={() => {
+                fullpage_api.moveTo(value)
+              }}
+            >
+              {value}
+            </a>
           </li>
-        </ul>
-      </div>
+        ))}
+      </ul>
     )
   }
+
+  useEffect(() => {
+    const hash = window.location.hash
+    let init
+
+    if (hash === '') {
+      init = 'Home-menu'
+    } else {
+      init = `${hash.replace('#', '')}-menu`
+    }
+    
+    document.getElementById(init).classList.add('active')
+  }, [])
 
   return (
     <div>
       <Menu />
       <ReactFullpage
-        debug
         navigation
-        licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-        render={comp =>
-          console.log('render prop change') || (
+        anchors={anchors}
+        licenseKey={'OPEN-SOURCE-GPLV3-LICENSE'}
+        onLeave={onLeave.bind(this)}
+        render={comp => (
             <ReactFullpage.Wrapper>
               <HomeSection />
               <AboutSection />

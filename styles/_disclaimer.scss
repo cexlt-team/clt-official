@@ -1,0 +1,25 @@
+.disclaimer {
+  background-image: url('/assets/images/sub-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .disclaimer {
+    .content {
+      padding: 12px;
+      font-size: 0.5rem;
+
+      .section-title {
+        display: none;
+      }
+    }
+  }
+}

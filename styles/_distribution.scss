@@ -1,0 +1,80 @@
+.distribution {
+  background-image: url('/assets/images/sub-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 24px;
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .distribution-item {
+        width: 50%;
+        padding: 15px;
+
+        .distribution-text {
+          .big-text {
+            font-size: 1.3rem;
+
+            &:last-child {
+              margin-top: 48px;
+            }
+          }
+
+          .small-text {
+            margin-top: 48px;
+            color: rgba(255,255,255,.58)
+          }
+        }
+
+        .distribution-chart {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .distribution {
+    .content {
+      .section-title {
+        display: none;
+      }
+
+      .wrap {
+        flex-direction: column-reverse;
+
+        .distribution-item {
+          width: 90%;
+
+          .distribution-text {
+            .big-text {
+              font-size: 0.9rem;
+  
+              &:last-child {
+                margin-top: 12px;
+              }
+            }
+  
+            .small-text {
+              font-size: 0.8rem;
+              margin-top: 12px;
+              color: rgba(255,255,255,.58)
+            }
+          }
+        }
+      }
+    }
+  }
+}
