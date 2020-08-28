@@ -1,7 +1,17 @@
 {
-  "name": "official",
+  "name": "clt-official",
   "version": "0.1.0",
-  "private": true,
+  "author": "clt-team",
+  "contributors": [
+    "clt-team",
+    "funitlabs"
+  ],
+  "homepage": "https://cexlt.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cexlt-team/official"
+  },
+  "license": "GPL-3.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
