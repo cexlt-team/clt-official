@@ -14,6 +14,7 @@ const MyApp = props => {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
         />
+        <link rel="shortcut icon" href="/assets/images/clt-icon.png" />
       </Head>
       <Component {...pageProps} />
     </Fragment>
