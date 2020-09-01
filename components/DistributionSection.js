@@ -11,7 +11,7 @@ const DistributionSection = () => {
                 No Sale of CLT held. CLT is completely trustless token for its community. Only 12.5% of its total supply is allocated to developers for listing and business development.              
               </div>
               <div className="small-text">
-                CLT distribution can be transformed into a governanceoriented token that is completely trustless and community driven.
+                CLT distribution can be transformed into a governance oriented token that is completely trustless and community driven.
               </div>
               <div className="big-text">Fully Smart-Contracted Dapp</div>
             </div>
