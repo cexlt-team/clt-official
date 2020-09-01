@@ -15,8 +15,8 @@ const RoadmapSection = () => {
           <div className="roadmap-item dashed">
             <div className="month">August</div>
             <div className="desc">
-              <p>Investment or Partnership on CLT</p>
-              <p>First ILO Offering</p>
+              <p>Angel & Private Investment Round</p>
+              <p>Community open</p>
             </div>
           </div>
           <div className="roadmap-item">
@@ -24,29 +24,26 @@ const RoadmapSection = () => {
             <div className="desc">
               <p>CLT Liquidity mining</p>
               <p>Token Airdrop</p>
-              <p>CLT Listing on DEX</p>
-              <p>CLT ILO Platform open</p>
-              <p>Staking Dapp open</p>
+              <p>CLT Listing - DEX</p>
+              <p>Staking Dapp Launching</p>
             </div>
           </div>
           <div className="roadmap-item">
             <div className="month">October</div>
             <div className="desc">
-              <p>ILO open on CLT platform</p>
-              <p>Listing on CEX(TBD)</p>
-              <p>Second ILO(TBD)</p>
+              <p>CLT ILO Launching</p>
             </div>
           </div>
           <div className="roadmap-item">
             <div className="month">November</div>
             <div className="desc">
-              <p>Governance update</p>
+              <p>Governance Partner Update</p>
             </div>
           </div>
           <div className="roadmap-item">
             <div className="month">December</div>
             <div className="desc">
-              <p>TBD</p>
+              <p>Second ILO</p>
             </div>
           </div>
         </div>

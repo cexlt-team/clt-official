@@ -7,7 +7,7 @@ const DappSection = () => {
 
   const options = {
     endDate: '09/11/2020 00:00 AM',
-    prefix: 'until to open Staking Dapp',
+    prefix: 'to Staking Dapp Opening',
     expired
   }
 

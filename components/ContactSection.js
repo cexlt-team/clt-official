@@ -19,16 +19,16 @@ const ContactSection = () => {
           <p>support@cexlt.io</p>
         </div>
         <div className="community-link">
-          <a href="#" target="_blank">
+          <a href="https://github.com/cexlt-team" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://medium.com/@cexlt" target="_blank">
             <FontAwesomeIcon icon={faMedium} />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://t.me/cexlt" target="_blank">
             <FontAwesomeIcon icon={faTelegram} />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://twitter.com/cexlt" target="_blank">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </div>

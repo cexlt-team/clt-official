@@ -7,36 +7,28 @@ const AboutSection = () => {
             <img src="/assets/images/icon-burn.png" />
             <div className="title-text">Transaction Burn</div>
             <div className="sub-text">
-              Each transaction, CLT token burned
-              based on total amount of transaction,
-              CLT’s scarcity increase            
+              CLT is burnt every transaction<br />to maintain its value            
             </div>
           </div>
           <div className="about-item">
             <img src="/assets/images/icon-contribute.png" />
             <div className="title-text">Liquidity Offerings</div>
             <div className="sub-text">
-              Each transaction, CLT token burned
-              based on total amount of transaction,
-              CLT’s scarcity increase            
+              CLT provides robust demand<br />to Centralized Exchange's token           
             </div>
           </div>
           <div className="about-item">
             <img src="/assets/images/icon-staking.png" />
             <div className="title-text">Staking Dapp</div>
             <div className="sub-text">
-              Each transaction, CLT token burned
-              based on total amount of transaction,
-              CLT’s scarcity increase            
+              Boosted reward provided through<br />CLT Staking Dapp            
             </div>
           </div>
           <div className="about-item">
             <img src="/assets/images/icon-dfl.png" />
             <div className="title-text">Token Deflation</div>
             <div className="sub-text">
-              Each transaction, CLT token burned
-              based on total amount of transaction,
-              CLT’s scarcity increase            
+              Smart-Contract Token<br />burn to keep the value of CLT            
             </div>
           </div>
         </div>

@@ -35,6 +35,11 @@ const Home = props => {
             </a>
           </li>
         ))}
+        <li>
+          <a href="/download/CLT_whitepaper.pdf" target="_blank">
+            Whitepaper
+          </a>
+        </li>
       </ul>
     )
   }
