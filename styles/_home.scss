@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
 
   .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+
     img {
       max-width: 450px;
     }
@@ -15,6 +19,35 @@
 
     .main-text {
       font-size: 2.5rem;
+    }
+
+    a {
+      text-decoration: none;
+
+      .dapp-link {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        line-height: 1.2;
+        font-size: 1.5rem;
+        color: #69d5d5;
+        font-weight: normal;
+
+        .link-text {
+          padding-right: 10px;
+          padding-bottom: 8px;
+          border-bottom: 2px solid #69d5d5;
+        }
+        
+        .link-icon {
+          height: 37px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          border-bottom: 2px solid #69d5d5;
+        }
+      }
     }
   }
 }

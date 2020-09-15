@@ -1,5 +1,7 @@
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
+import { FiMenu } from 'react-icons/fi'
+import { FiArrowRight } from 'react-icons/fi'
 
 import HomeSection from '../components/HomeSection'
 import AboutSection from '../components/AboutSection'
@@ -21,26 +23,63 @@ const Home = props => {
   }
 
   const Menu = () => {
+    const [open, setOpen] = useState(false)
+
+    const handleDrawer = () => {
+      setOpen(!open)
+    }
+
     return (
-      <ul id="mainMenu" className="menu">
-        {anchors.map((value, index) => (
-          <li id={`${value}-menu`} className="menu-item" key={index}>
-            <a 
-              href={`#${value}`}
-              onClick={() => {
-                fullpage_api.moveTo(value)
-              }}
-            >
-              {value}
+      <div>
+        <div id="mainLogo">
+          <img src="/assets/images/clt-icon.png" alt="CLT" />
+          <div className="logo-title">CLT</div>
+        </div>
+        <ul id="mainMenu" className="menu">
+          {anchors.map((value, index) => (
+            <li id={`${value}-menu`} className="menu-item" key={index}>
+              <a 
+                href={`#${value}`}
+                onClick={() => {
+                  fullpage_api.moveTo(value)
+                }}
+              >
+                {value}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a href="/download/CLT_whitepaper.pdf" target="_blank">
+              Whitepaper
             </a>
           </li>
-        ))}
-        <li>
-          <a href="/download/CLT_whitepaper.pdf" target="_blank">
-            Whitepaper
-          </a>
-        </li>
-      </ul>
+        </ul>
+        <div id="mobileMenu">
+          <div className="drawer-btn" onClick={handleDrawer}><FiMenu /></div>
+          <div className={open ? 'drawer-layer on' : 'drawer-layer'}>
+            <div className="drawer-close" onClick={handleDrawer}><FiArrowRight /></div>
+            <ul>
+              {anchors.map((value, index) => (
+                <li id={`${value}-menu`} className="menu-item" key={index}>
+                  <a 
+                    href={`#${value}`}
+                    onClick={() => {
+                      fullpage_api.moveTo(value)
+                    }}
+                  >
+                    {value}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a href="/download/CLT_whitepaper.pdf" target="_blank">
+                  Whitepaper
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     )
   }
 
