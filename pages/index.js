@@ -11,7 +11,7 @@ import ContactSection from '../components/ContactSection'
 import DisclaimerSection from '../components/DisclaimerSection'
 import DappSection from '../components/DappSection'
 
-const anchors = ['Home', 'About', 'Distribution', 'Roadmap', 'Contact', 'Disclaimer', 'Dapp'];
+const anchors = ['Home', 'About', 'Distribution', 'Roadmap', 'Contact', 'Disclaimer'];
 
 const Home = props => {
   const onLeave = (origin, destination, direction) => {
@@ -49,6 +49,11 @@ const Home = props => {
             </li>
           ))}
           <li>
+            <a href="https://liquidity.cexlt.io" target="_blank">
+              Dapp
+            </a>
+          </li>
+          <li>
             <a href="/download/CLT_whitepaper.pdf" target="_blank">
               Whitepaper
             </a>
@@ -71,6 +76,11 @@ const Home = props => {
                   </a>
                 </li>
               ))}
+              <li>
+                <a href="https://liquidity.cexlt.io" target="_blank">
+                  Dapp
+                </a>
+              </li>
               <li>
                 <a href="/download/CLT_whitepaper.pdf" target="_blank">
                   Whitepaper
@@ -112,7 +122,6 @@ const Home = props => {
               <RoadmapSection />
               <ContactSection />
               <DisclaimerSection />
-              <DappSection />
             </ReactFullpage.Wrapper>
           )
         }

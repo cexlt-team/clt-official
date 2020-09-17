@@ -6,7 +6,7 @@ const HomeSection = () => {
       <div className="content">
         <div className="sub-text">Bring decentralization and liquidity to centralized tokens</div>
         <div className="main-text">Centralized exchange token’s Liquidity Token</div>
-        <a href="#">
+        <a href="https://liquidity.cexlt.io" target="_blank">
           <div className="dapp-link">
             <div className="link-text">ShowKase</div>
             <div className="link-icon"><FiArrowRight /></div>
