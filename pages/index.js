@@ -55,7 +55,7 @@ const Home = props => {
           </li>
           <li>
             <a href="https://uniswap.info/pair/0x0f1b7d5e235098e9da4ae78199021d7938c77ae6" target="_blank">
-              Exchange
+              Trade
             </a>
           </li>
           <li>
@@ -88,7 +88,7 @@ const Home = props => {
               </li>
               <li>
                 <a href="https://uniswap.info/pair/0x0f1b7d5e235098e9da4ae78199021d7938c77ae6" target="_blank">
-                  Exchange
+                  Trade
                 </a>
               </li>
               <li>
