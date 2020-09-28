@@ -54,6 +54,11 @@ const Home = props => {
             </a>
           </li>
           <li>
+            <a href="https://uniswap.info/pair/0x0f1b7d5e235098e9da4ae78199021d7938c77ae6" target="_blank">
+              Exchange
+            </a>
+          </li>
+          <li>
             <a href="/download/CLT_whitepaper.pdf" target="_blank">
               Whitepaper
             </a>
@@ -79,6 +84,11 @@ const Home = props => {
               <li>
                 <a href="https://liquidity.cexlt.io" target="_blank">
                   Dapp
+                </a>
+              </li>
+              <li>
+                <a href="https://uniswap.info/pair/0x0f1b7d5e235098e9da4ae78199021d7938c77ae6" target="_blank">
+                  Exchange
                 </a>
               </li>
               <li>
