@@ -8,7 +8,7 @@ const DistributionSection = () => {
             <div className="distribution-text">
               <div className="big-text">Trustless, community driven token</div>
               <div className="small-text">
-                No Sale of CLT held. CLT is completely trustless token for its community. Only 12.5% of its total supply is allocated to developers for listing and business development.              
+                No Sale of CLT held. CLT is completely trustless token for its community. Only 10% of its total supply is allocated to developers for listing and business development.              
               </div>
               <div className="small-text">
                 CLT distribution can be transformed into a governance oriented token that is completely trustless and community driven.

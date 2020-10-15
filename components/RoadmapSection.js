@@ -19,7 +19,7 @@ const RoadmapSection = () => {
               <p>Community open</p>
             </div>
           </div>
-          <div className="roadmap-item">
+          <div className="roadmap-item dashed">
             <div className="month">September</div>
             <div className="desc">
               <p>CLT Liquidity mining</p>
@@ -31,7 +31,9 @@ const RoadmapSection = () => {
           <div className="roadmap-item">
             <div className="month">October</div>
             <div className="desc">
-              <p>CLT ILO Launching</p>
+              <p>CLT Staking</p>
+              <p>Token Airdrop</p>
+              <p>Rebranding to Finance Farming Platform</p>
             </div>
           </div>
           <div className="roadmap-item">
@@ -43,7 +45,7 @@ const RoadmapSection = () => {
           <div className="roadmap-item">
             <div className="month">December</div>
             <div className="desc">
-              <p>Second ILO</p>
+              <p>Second Platform dapp</p>
             </div>
           </div>
         </div>
