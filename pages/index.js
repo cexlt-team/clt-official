@@ -49,12 +49,12 @@ const Home = props => {
             </li>
           ))}
           <li>
-            <a href="https://liquidity.cexlt.io" target="_blank">
+            <a href="https://staking.cexlt.io" target="_blank">
               Dapp
             </a>
           </li>
           <li>
-            <a href="https://uniswap.info/pair/0x0f1b7d5e235098e9da4ae78199021d7938c77ae6" target="_blank">
+            <a href="https://info.uniswap.org/pair/0x95a63caaa2f9a7556594ee20fa7a3ae07ef2791f" target="_blank">
               Trade
             </a>
           </li>
@@ -82,12 +82,12 @@ const Home = props => {
                 </li>
               ))}
               <li>
-                <a href="https://liquidity.cexlt.io" target="_blank">
+                <a href="https://staking.cexlt.io" target="_blank">
                   Dapp
                 </a>
               </li>
               <li>
-                <a href="https://uniswap.info/pair/0x0f1b7d5e235098e9da4ae78199021d7938c77ae6" target="_blank">
+                <a href="https://info.uniswap.org/pair/0x95a63caaa2f9a7556594ee20fa7a3ae07ef2791f" target="_blank">
                   Trade
                 </a>
               </li>
