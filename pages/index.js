@@ -1,33 +1,40 @@
-import { useState, useEffect } from 'react'
-import ReactFullpage from '@fullpage/react-fullpage'
-import { FiMenu } from 'react-icons/fi'
-import { FiArrowRight } from 'react-icons/fi'
+import { useState, useEffect } from "react";
+import ReactFullpage from "@fullpage/react-fullpage";
+import { FiMenu } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 
-import HomeSection from '../components/HomeSection'
-import AboutSection from '../components/AboutSection'
-import DistributionSection from '../components/DistributionSection'
-import RoadmapSection from '../components/RoadmapSection'
-import ContactSection from '../components/ContactSection'
-import DisclaimerSection from '../components/DisclaimerSection'
-import DappSection from '../components/DappSection'
+import HomeSection from "../components/HomeSection";
+import AboutSection from "../components/AboutSection";
+import DistributionSection from "../components/DistributionSection";
+import RoadmapSection from "../components/RoadmapSection";
+import ContactSection from "../components/ContactSection";
+import DisclaimerSection from "../components/DisclaimerSection";
+import DappSection from "../components/DappSection";
 
-const anchors = ['Home', 'About', 'Distribution', 'Roadmap', 'Contact', 'Disclaimer'];
+const anchors = [
+  "Home",
+  "About",
+  "Distribution",
+  "Roadmap",
+  "Contact",
+  "Disclaimer"
+];
 
 const Home = props => {
   const onLeave = (origin, destination, direction) => {
-    const orig = `${origin.anchor}-menu`
-    const dest = `${destination.anchor}-menu`
+    const orig = `${origin.anchor}-menu`;
+    const dest = `${destination.anchor}-menu`;
 
-    document.getElementById(orig).classList.toggle('active')
-    document.getElementById(dest).classList.toggle('active')
-  }
+    document.getElementById(orig).classList.toggle("active");
+    document.getElementById(dest).classList.toggle("active");
+  };
 
   const Menu = () => {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
 
     const handleDrawer = () => {
-      setOpen(!open)
-    }
+      setOpen(!open);
+    };
 
     return (
       <div>
@@ -38,10 +45,10 @@ const Home = props => {
         <ul id="mainMenu" className="menu">
           {anchors.map((value, index) => (
             <li id={`${value}-menu`} className="menu-item" key={index}>
-              <a 
+              <a
                 href={`#${value}`}
                 onClick={() => {
-                  fullpage_api.moveTo(value)
+                  fullpage_api.moveTo(value);
                 }}
               >
                 {value}
@@ -49,12 +56,15 @@ const Home = props => {
             </li>
           ))}
           <li>
-            <a href="https://staking.cexlt.io" target="_blank">
+            <a href="https://finance.cexlt.io" target="_blank">
               Dapp
             </a>
           </li>
           <li>
-            <a href="https://info.uniswap.org/pair/0x95a63caaa2f9a7556594ee20fa7a3ae07ef2791f" target="_blank">
+            <a
+              href="https://info.uniswap.org/pair/0x95a63caaa2f9a7556594ee20fa7a3ae07ef2791f"
+              target="_blank"
+            >
               Trade
             </a>
           </li>
@@ -65,16 +75,20 @@ const Home = props => {
           </li>
         </ul>
         <div id="mobileMenu">
-          <div className="drawer-btn" onClick={handleDrawer}><FiMenu /></div>
-          <div className={open ? 'drawer-layer on' : 'drawer-layer'}>
-            <div className="drawer-close" onClick={handleDrawer}><FiArrowRight /></div>
+          <div className="drawer-btn" onClick={handleDrawer}>
+            <FiMenu />
+          </div>
+          <div className={open ? "drawer-layer on" : "drawer-layer"}>
+            <div className="drawer-close" onClick={handleDrawer}>
+              <FiArrowRight />
+            </div>
             <ul>
               {anchors.map((value, index) => (
                 <li id={`${value}-menu`} className="menu-item" key={index}>
-                  <a 
+                  <a
                     href={`#${value}`}
                     onClick={() => {
-                      fullpage_api.moveTo(value)
+                      fullpage_api.moveTo(value);
                     }}
                   >
                     {value}
@@ -87,7 +101,10 @@ const Home = props => {
                 </a>
               </li>
               <li>
-                <a href="https://info.uniswap.org/pair/0x95a63caaa2f9a7556594ee20fa7a3ae07ef2791f" target="_blank">
+                <a
+                  href="https://info.uniswap.org/pair/0x95a63caaa2f9a7556594ee20fa7a3ae07ef2791f"
+                  target="_blank"
+                >
                   Trade
                 </a>
               </li>
@@ -100,21 +117,21 @@ const Home = props => {
           </div>
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   useEffect(() => {
-    const hash = window.location.hash
-    let init
+    const hash = window.location.hash;
+    let init;
 
-    if (hash === '') {
-      init = 'Home-menu'
+    if (hash === "") {
+      init = "Home-menu";
     } else {
-      init = `${hash.replace('#', '')}-menu`
+      init = `${hash.replace("#", "")}-menu`;
     }
-    
-    document.getElementById(init).classList.add('active')
-  }, [])
+
+    document.getElementById(init).classList.add("active");
+  }, []);
 
   return (
     <div>
@@ -122,22 +139,21 @@ const Home = props => {
       <ReactFullpage
         navigation
         anchors={anchors}
-        licenseKey={'OPEN-SOURCE-GPLV3-LICENSE'}
+        licenseKey={"OPEN-SOURCE-GPLV3-LICENSE"}
         onLeave={onLeave.bind(this)}
         render={comp => (
-            <ReactFullpage.Wrapper>
-              <HomeSection />
-              <AboutSection />
-              <DistributionSection />
-              <RoadmapSection />
-              <ContactSection />
-              <DisclaimerSection />
-            </ReactFullpage.Wrapper>
-          )
-        }
+          <ReactFullpage.Wrapper>
+            <HomeSection />
+            <AboutSection />
+            <DistributionSection />
+            <RoadmapSection />
+            <ContactSection />
+            <DisclaimerSection />
+          </ReactFullpage.Wrapper>
+        )}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
